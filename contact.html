@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLife SMP - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">EcoLife SMP</div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Clan</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="clan.html">Semua Clan</a></li>
+                        <li><a href="clan-ppq.html" class="ppq">🤡 PPQ</a></li>
+                        <li><a href="clan-lightness.html" class="lightness">🌟 LightNess</a></li>
+                        <li><a href="clan-mvp.html" class="mvp">👑 MVP</a></li>
+                        <li><a href="clan-darkness.html" class="darkness">👿 Darkness</a></li>
+                    </ul>
+                </li>
+                <li><a href="lore.html">Lore</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-on-scroll">
+                <h1>Contact Us</h1>
+                <p class="tagline">Hubungi kami untuk pertanyaan, laporan, atau kerja sama</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Kirim Pesan</h2>
+            </div>
+            
+            <div class="contact-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="feature-card fade-in-on-scroll" style="padding: 30px;">
+                    <!-- Formspree Form -->
+                    <form id="contactForm" action="https://formspree.io/f/xvzzzvyo" method="POST">
+                        <!-- Hidden Fields untuk Formspree -->
+                        <input type="hidden" name="_subject" value="Pesan Baru dari Website EcoLife SMP">
+                        <input type="hidden" name="_replyto" placeholder="Your email" id="_replyto">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--accent); font-weight: 600; font-size: 0.95rem;">Nama Lengkap *</label>
+                            <input type="text" name="name" required style="width: 100%; padding: 12px 15px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(76, 175, 80, 0.3); border-radius: 5px; color: var(--light); font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: all 0.3s ease;" placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--accent); font-weight: 600; font-size: 0.95rem;">Alamat Email *</label>
+                            <input type="email" name="email" required style="width: 100%; padding: 12px 15px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(76, 175, 80, 0.3); border-radius: 5px; color: var(--light); font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: all 0.3s ease;" placeholder="contoh@email.com">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--accent); font-weight: 600; font-size: 0.95rem;">
+                                <i class="fab fa-discord"></i> Nama Discord (Opsional)
+                            </label>
+                            <input type="text" name="discord" style="width: 100%; padding: 12px 15px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(88, 101, 242, 0.3); border-radius: 5px; color: var(--light); font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: all 0.3s ease;" placeholder="Contoh: username#1234 atau username">
+                            <small style="color: #aaa; font-size: 0.8rem; margin-top: 5px; display: block;">
+                                Isi jika ingin dihubungi via Discord. Pastikan Anda sudah join server Discord EcoLife SMP.
+                            </small>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--accent); font-weight: 600; font-size: 0.95rem;">Subjek *</label>
+                            <select name="Kategori" required style="width: 100%; padding: 12px 15px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(76, 175, 80, 0.3); border-radius: 5px; color: var(--light); font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: all 0.3s ease;">
+                                <option value="">-- Pilih kategori --</option>
+                                <option value="Pertanyaan Umum">Pertanyaan Umum</option>
+                                <option value="Laporan Bug/Issue">Laporan Bug/Issue</option>
+                                <option value="Kerja Sama/Sponsor">Kerja Sama/Sponsor</option>
+                                <option value="Laporan Player">Laporan Player</option>
+                                <option value="Pendaftaran Staff">Pendaftaran Staff</option>
+                                <option value="Pendaftaran Clan">Pendaftaran Clan</option>
+                                <option value="Saran dan Feedback">Saran dan Feedback</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; color: var(--accent); font-weight: 600; font-size: 0.95rem;">Pesan Anda *</label>
+                            <textarea name="message" rows="6" required style="width: 100%; padding: 12px 15px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(76, 175, 80, 0.3); border-radius: 5px; color: var(--light); font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: all 0.3s ease; resize: vertical;" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: flex; align-items: center; gap: 8px; color: var(--light); font-size: 0.9rem;">
+                                <input type="checkbox" name="joined_discord" value="Ya" style="width: auto;">
+                                Saya sudah join server Discord EcoLife SMP
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="btn" style="width: 100%; padding: 15px;">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                        </div>
+                        
+                        <p style="text-align: center; color: #aaa; font-size: 0.9rem; margin-top: 15px;">
+                            * Pesan akan dikirim ke email EcoLifeSmpEvo@gmail.com
+                        </p>
+                    </form>
+                    
+                    <div id="formSuccess" style="display: none; text-align: center; padding: 30px; background: rgba(76, 175, 80, 0.1); border-radius: 10px; border: 1px solid var(--primary); margin-top: 20px;">
+                        <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--primary); margin-bottom: 10px;">Pesan Terkirim!</h3>
+                        <p>Terima kasih telah menghubungi kami. Pesan Anda telah berhasil dikirim ke tim EcoLife SMP. Kami akan membalas secepatnya melalui email yang Anda berikan.</p>
+                        <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center;">
+                            <button onclick="window.location.href='index.html'" class="btn">
+                                <i class="fas fa-home"></i> Kembali ke Home
+                            </button>
+                            <a href="https://discord.gg/Mgw6U537js" target="_blank" class="btn" style="background-color: #5865F2; border-color: #5865F2;">
+                                <i class="fab fa-discord"></i> Join Discord
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Contact Methods -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Metode Kontak Lainnya</h2>
+            </div>
+            
+            <div class="features-grid" style="max-width: 900px; margin: 0 auto;">
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon" style="color: #5865F2;">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord Server</h3>
+                    <p>Bergabunglah dengan Discord komunitas kami untuk chat langsung dengan staff dan player lainnya.</p>
+                    <a href="https://discord.gg/Mgw6U537js" target="_blank" class="btn" style="margin-top: 15px;">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 5px;">
+                        <small><strong>Link:</strong> discord.gg/Mgw6U537js</small>
+                        <br>
+                        <small><strong>Nama Discord wajib diisi jika ingin cepat direspon!</strong></small>
+                    </div>
+                </div>
+                
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon" style="color: #000000;">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3>TikTok</h3>
+                    <p>Ikuti TikTok kami untuk melihat highlight, event, dan konten menarik dari server EcoLife SMP.</p>
+                    <a href="https://vm.tiktok.com/ZSHofBgQRRQVc-S2XeG/" target="_blank" class="btn" style="margin-top: 15px;">
+                        <i class="fab fa-tiktok"></i> Follow TikTok
+                    </a>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 5px;">
+                        <small><strong>Link:</strong> vm.tiktok.com/ZSHofBgQRRQVc-S2XeG/</small>
+                    </div>
+                </div>
+                
+                <div class="feature-card fade-in-on-scroll">
+                    <div class="feature-icon" style="color: #ea4335;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Langsung</h3>
+                    <p>Kirim email langsung ke alamat email resmi server untuk pertanyaan formal atau laporan penting.</p>
+                    <a href="mailto:EcoLifeSmpEvo@gmail.com" class="btn" style="margin-top: 15px;">
+                        <i class="fas fa-envelope"></i> Kirim Email
+                    </a>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 5px;">
+                        <small><strong>Email:</strong> EcoLifeSmpEvo@gmail.com</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding-top: 30px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pertanyaan Umum (FAQ)</h2>
+            </div>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="feature-card fade-in-on-scroll" style="margin-bottom: 15px;">
+                    <div class="faq-question" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <h4 style="margin: 0; font-size: 1.1rem;">Kenapa perlu mengisi nama Discord?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-top: 15px; margin: 0; border-top: 1px solid rgba(255,255,255,0.1);">Nama Discord membantu tim kami menghubungi Anda lebih cepat. Jika Anda memberikan nama Discord, staff bisa langsung DM Anda di Discord untuk respon yang lebih cepat.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card fade-in-on-scroll" style="margin-bottom: 15px;">
+                    <div class="faq-question" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <h4 style="margin: 0; font-size: 1.1rem;">Berapa lama waktu respon dari tim?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-top: 15px; margin: 0; border-top: 1px solid rgba(255,255,255,0.1);">Tim kami akan merespon dalam waktu 24-48 jam. Untuk laporan mendesak (cheating/harassment), kami berusaha merespon dalam 12 jam. Jika Anda memberikan nama Discord, respon bisa lebih cepat.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card fade-in-on-scroll" style="margin-bottom: 15px;">
+                    <div class="faq-question" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <h4 style="margin: 0; font-size: 1.1rem;">Bagaimana cara melaporkan player yang melanggar rules?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-top: 15px; margin: 0; border-top: 1px solid rgba(255,255,255,0.1);">Pilih kategori "Laporan Player" pada form di atas, sertakan nama player, bukti screenshot/video, dan deskripsi lengkap kejadian. Bukti sangat penting untuk tindakan lebih lanjut.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card fade-in-on-scroll" style="margin-bottom: 15px;">
+                    <div class="faq-question" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <h4 style="margin: 0; font-size: 1.1rem;">Apakah harus join Discord untuk bisa mengirim pesan?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-top: 15px; margin: 0; border-top: 1px solid rgba(255,255,255,0.1);">Tidak wajib, namun sangat disarankan. Kebanyakan komunikasi dan update server terjadi di Discord. Dengan join Discord, Anda bisa mendapat respon lebih cepat dan update terbaru.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord CTA Section -->
+    <section style="padding-top: 30px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Belum Join Discord?</h2>
+            </div>
+            
+            <div class="feature-card fade-in-on-scroll" style="text-align: center;">
+                <div class="feature-icon" style="font-size: 4rem; color: #5865F2; margin-bottom: 20px;">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <h3 style="color: var(--accent); margin-bottom: 15px;">Join Discord EcoLife SMP Sekarang!</h3>
+                <p style="margin-bottom: 20px;">90% komunikasi server terjadi di Discord. Dapatkan:</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin: 20px 0; text-align: left;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Update server & maintenance info</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Chat langsung dengan staff & player</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Info event & giveaway eksklusif</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                        <span>Support teknis lebih cepat</span>
+                    </div>
+                </div>
+                
+                <a href="https://discord.gg/Mgw6U537js" target="_blank" class="btn" style="background-color: #5865F2; border-color: #5865F2; padding: 15px 30px; font-size: 1.1rem;">
+                    <i class="fab fa-discord"></i> Join Discord Sekarang
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="rules.html">Rules</a>
+                <a href="staff.html">Staff</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            
+            <p class="copyright">
+                &copy; <span id="current-year">2026</span> EcoLife SMP. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Script khusus untuk halaman contact
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Toggle
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    const isActive = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+                    
+                    // Close all FAQ items
+                    document.querySelectorAll('.faq-answer').forEach(item => {
+                        item.style.maxHeight = '0';
+                    });
+                    
+                    // Reset all icons
+                    document.querySelectorAll('.faq-question i').forEach(item => {
+                        item.style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Open current if closed
+                    if (!isActive) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // Contact Form Handling untuk Formspree
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            const discordCheckbox = document.querySelector('input[name="joined_discord"]');
+            const discordField = document.querySelector('input[name="discord"]');
+            
+            // Auto-check discord checkbox jika discord field diisi
+            if (discordField && discordCheckbox) {
+                discordField.addEventListener('input', function() {
+                    if (this.value.trim() !== '') {
+                        discordCheckbox.checked = true;
+                    } else {
+                        discordCheckbox.checked = false;
+                    }
+                });
+            }
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Tampilkan loading
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
+                    submitBtn.disabled = true;
+                    
+                    try {
+                        const formData = new FormData(this);
+                        
+                        // Kirim ke Formspree
+                        const response = await fetch(this.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+                        
+                        if (response.ok) {
+                            // Tampilkan pesan sukses
+                            contactForm.style.display = 'none';
+                            formSuccess.style.display = 'block';
+                            contactForm.reset();
+                            
+                            // Update tahun di footer
+                            const yearSpan = document.getElementById('current-year');
+                            if (yearSpan) {
+                                yearSpan.textContent = new Date().getFullYear();
+                            }
+                            
+                            // Scroll ke success message
+                            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        } else {
+                            alert('Terjadi kesalahan. Silakan coba lagi atau kirim langsung ke email kami.');
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('Gagal mengirim pesan. Silakan coba lagi atau kirim langsung ke email kami.');
+                    } finally {
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+            
+            // Update tahun di footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

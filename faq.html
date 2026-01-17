@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EcoLife SMP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <i class="fas fa-leaf" style="color: white; font-size: 1.5rem;"></i>
+                </div>
+                <div class="logo-text">EcoLife SMP</div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Clan <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="clan.html">Semua Clan</a></li>
+                        <li><a href="clan-ppq.html" class="ppq">🤡 PPQ</a></li>
+                        <li><a href="clan-lightness.html" class="lightness">🌟 LightNess</a></li>
+                        <li><a href="clan-mvp.html" class="mvp">👑 MVP</a></li>
+                        <li><a href="clan-darkness.html" class="darkness">👿 Darkness</a></li>
+                    </ul>
+                </li>
+                <li><a href="lore.html">Lore</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-on-scroll">
+                <h1>❓ FAQ EcoLife SMP</h1>
+                <p class="tagline">Pertanyaan Umum & Tutorial Lengkap</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories Navigation -->
+    <section style="padding: 20px 0; background: rgba(13, 13, 13, 0.9);">
+        <div class="container">
+            <div class="faq-categories" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <a href="#category-join" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-sign-in-alt"></i> Bergabung
+                </a>
+                <a href="#category-basic" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-gamepad"></i> Basic Gameplay
+                </a>
+                <a href="#category-economy" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-coins"></i> Economy System
+                </a>
+                <a href="#category-clan" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-users"></i> Clan System
+                </a>
+                <a href="#category-advanced" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-cogs"></i> Fitur Lanjutan
+                </a>
+                <a href="#category-trouble" class="btn" style="padding: 10px 15px; font-size: 0.9rem;">
+                    <i class="fas fa-question-circle"></i> Troubleshooting
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="about-section">
+        <div class="container">
+            <!-- Category 1: Bergabung Server -->
+            <div class="faq-category fade-in-on-scroll" id="category-join" style="margin-bottom: 60px;">
+                <div class="section-title">
+                    <h2><i class="fas fa-sign-in-alt"></i> Cara Bergabung</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-server" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara join server pertama kali?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                    <div style="flex-shrink: 0;">
+                                        <div style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                                    </div>
+                                    <div>
+                                        <h4 style="color: var(--accent); margin-bottom: 5px;">Copy IP Server</h4>
+                                        <p>Gunakan IP berikut sesuai versi Minecraft kamu:</p>
+                                        <div style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; margin: 10px 0;">
+                                            <p><strong>🎮 Java Edition:</strong> <code style="color: var(--accent); background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 3px;">ECOLIFE.inacraft.my.id</code></p>
+                                            <p><strong>📱 Bedrock Edition:</strong> <code style="color: var(--accent); background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 3px;">ECOLIFE.inacraft.my.id</code> Port: <code style="color: var(--accent); background: rgba(0,0,0,0.3); padding: 3px 8px; border-radius: 3px;">25767</code></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 20px;">
+                                    <div style="flex-shrink: 0;">
+                                        <div style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                                    </div>
+                                    <div>
+                                        <h4 style="color: var(--accent); margin-bottom: 5px;">Register Akun</h4>
+                                        <p>Setelah join pertama kali, ketik perintah:</p>
+                                        <div style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; margin: 10px 0; font-family: 'Courier New', monospace;">
+                                            <p><code>/register password_anda ulangi_password</code></p>
+                                            <small style="color: #aaa;">Contoh: <code>/register rahasia123 rahasia123</code></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: flex-start; gap: 15px; margin-top: 20px;">
+                                    <div style="flex-shrink: 0;">
+                                        <div style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                                    </div>
+                                    <div>
+                                        <h4 style="color: var(--accent); margin-bottom: 5px;">Login Setiap Join</h4>
+                                        <p>Setelah register, setiap kali join harus login:</p>
+                                        <div style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; margin: 10px 0; font-family: 'Courier New', monospace;">
+                                            <p><code>/login password_anda</code></p>
+                                            <small style="color: #aaa;">Contoh: <code>/login rahasia123</code></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 15px; padding: 10px; background: rgba(255,215,0,0.1); border-radius: 5px;">
+                                    <p style="color: var(--accent); margin: 0; font-size: 0.9rem;">
+                                        <i class="fas fa-info-circle"></i> <strong>Note:</strong> Sistem register/login WAJIB untuk semua pemain (premium & cracked) demi keamanan akun.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-code-branch" style="color: var(--primary); margin-right: 10px;"></i>
+                                Server mendukung versi Minecraft berapa?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                    <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 5px;">
+                                        <h4 style="color: var(--primary); margin-bottom: 10px;">✅ Supported</h4>
+                                        <ul style="padding-left: 20px;">
+                                            <li>Minecraft Java 1.20.1+</li>
+                                            <li>Minecraft Bedrock (via Geyser)</li>
+                                            <li>Premium & Cracked accounts</li>
+                                            <li>Client-side mods (Optifine, Sodium)</li>
+                                            <li>All texture packs</li>
+                                            <li>Shaders support</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div style="background: rgba(255,0,0,0.1); padding: 15px; border-radius: 5px;">
+                                        <h4 style="color: #ff4444; margin-bottom: 10px;">❌ Not Supported</h4>
+                                        <ul style="padding-left: 20px;">
+                                            <li>Versions below 1.20</li>
+                                            <li>Hacked clients / cheats</li>
+                                            <li>X-ray texture packs</li>
+                                            <li>Auto-clickers / macros</li>
+                                            <li>Mods with unfair advantage</li>
+                                            <li>VPN for cheating</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 15px; padding: 10px; background: rgba(0,195,255,0.1); border-radius: 5px;">
+                                    <p style="color: var(--clan-mvp); margin: 0; font-size: 0.9rem;">
+                                        <i class="fas fa-star"></i> <strong>Rekomendasi:</strong> Gunakan Minecraft Java 1.20.1 dengan Optifine untuk pengalaman terbaik.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Basic Gameplay -->
+            <div class="faq-category fade-in-on-scroll" id="category-basic" style="margin-bottom: 60px;">
+                <div class="section-title">
+                    <h2><i class="fas fa-gamepad"></i> Basic Gameplay</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-shield-alt" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara claim tanah untuk proteksi?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                                    <div style="background: var(--primary); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">
+                                        📋 Langkah 1: Siapkan Tools
+                                    </div>
+                                    <div style="flex-grow: 1; height: 2px; background: linear-gradient(90deg, var(--primary), transparent);"></div>
+                                </div>
+                                
+                                <p>Dapatkan <strong>Golden Shovel</strong> dari:</p>
+                                <ul style="padding-left: 20px; margin: 10px 0;">
+                                    <li><code>/shop</code> → Tools Section (100 coins)</li>
+                                    <li>Craft sendiri: 2 stick + 2 gold ingot</li>
+                                    <li>Market player: <code>/warp market</code></li>
+                                </ul>
+                                
+                                <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0;">
+                                    <div style="background: var(--primary); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">
+                                        🎯 Langkah 2: Pilih Area
+                                    </div>
+                                    <div style="flex-grow: 1; height: 2px; background: linear-gradient(90deg, var(--primary), transparent);"></div>
+                                </div>
+                                
+                                <ol style="padding-left: 20px; margin: 10px 0;">
+                                    <li>Pilih titik pertama (pojok kiri atas area)</li>
+                                    <li>Klik kanan dengan Golden Shovel</li>
+                                    <li>Pilih titik kedua (pojok kanan bawah area)</li>
+                                    <li>Klik kanan dengan Golden Shovel lagi</li>
+                                    <li>Akan muncul visual area yang dipilih</li>
+                                </ol>
+                                
+                                <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0;">
+                                    <div style="background: var(--primary); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">
+                                        ✅ Langkah 3: Buat Claim
+                                    </div>
+                                    <div style="flex-grow: 1; height: 2px; background: linear-gradient(90deg, var(--primary), transparent);"></div>
+                                </div>
+                                
+                                <div style="background: rgba(0,0,0,0.5); padding: 15px; border-radius: 5px; margin: 10px 0;">
+                                    <p><strong>Buat claim:</strong> <code>/claim create namaclaim</code></p>
+                                    <p><strong>Tambahkan akses:</strong> <code>/claim addfriend namapemain</code></p>
+                                    <p><strong>Lihat info claim:</strong> <code>/claim info</code></p>
+                                    <p><strong>Hapus claim:</strong> <code>/claim delete</code></p>
+                                </div>
+                                
+                                <div style="margin-top: 15px; padding: 10px; background: rgba(255,215,0,0.1); border-radius: 5px;">
+                                    <p style="color: var(--accent); margin: 0; font-size: 0.9rem;">
+                                        <i class="fas fa-video"></i> <strong>Video Tutorial:</strong> 
+                                        <a href="https://youtu.be/4bdg1SgCisk" target="_blank" style="color: var(--primary); text-decoration: underline;">Cara Claim Tanah di EcoLife SMP</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-microphone" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara menggunakan VoiceChat?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <div style="display: inline-block; background: rgba(0,195,255,0.2); padding: 10px 20px; border-radius: 5px; border: 1px solid var(--clan-mvp);">
+                                        <i class="fas fa-headset" style="color: var(--clan-mvp); font-size: 2rem; margin-bottom: 10px; display: block;"></i>
+                                        <h4 style="color: var(--clan-mvp); margin: 0;">Simple Voice Chat Mod</h4>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr; gap: 15px; margin: 20px 0;">
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">📥 Download Mod</h5>
+                                        <p>Download Simple Voice Chat dari:</p>
+                                        <ul style="padding-left: 20px; margin-top: 10px;">
+                                            <li><a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat" target="_blank" style="color: var(--primary);">CurseForge (Official)</a></li>
+                                            <li><a href="https://modrinth.com/mod/simple-voice-chat" target="_blank" style="color: var(--primary);">Modrinth (Alternative)</a></li>
+                                        </ul>
+                                        <p style="margin-top: 10px; font-size: 0.9rem; color: #aaa;">Pilih versi 1.20.1 yang compatible dengan server.</p>
+                                    </div>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">⚙️ Installation</h5>
+                                        <ol style="padding-left: 20px;">
+                                            <li>Install Fabric/Forge launcher</li>
+                                            <li>Download Simple Voice Chat mod</li>
+                                            <li>Place mod di folder <code>.minecraft/mods</code></li>
+                                            <li>Launch Minecraft dengan modloader</li>
+                                            <li>Join server EcoLife SMP</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">🎮 In-Game Controls</h5>
+                                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                            <div>
+                                                <code style="color: var(--accent);">V</code>
+                                                <p style="font-size: 0.9rem; color: #aaa;">Open Voice Chat GUI</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">U</code>
+                                                <p style="font-size: 0.9rem; color: #aaa;">Toggle mute</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">O</code>
+                                                <p style="font-size: 0.9rem; color: #aaa;">Toggle deafen</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">B</code>
+                                                <p style="font-size: 0.9rem; color: #aaa;">Push to talk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 15px; padding: 10px; background: rgba(0,195,255,0.1); border-radius: 5px;">
+                                    <p style="color: var(--clan-mvp); margin: 0; font-size: 0.9rem;">
+                                        <i class="fas fa-exclamation-triangle"></i> <strong>Important:</strong> Voice Chat hanya berfungsi dalam radius tertentu (proximity chat). Untuk global chat, gunakan radio channels.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Economy System -->
+            <div class="faq-category fade-in-on-scroll" id="category-economy" style="margin-bottom: 60px;">
+                <div class="section-title">
+                    <h2><i class="fas fa-coins"></i> Economy System</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-money-bill-wave" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara mendapatkan uang (coins) di server?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+                                    <!-- Jobs System -->
+                                    <div style="background: rgba(255,215,0,0.1); padding: 15px; border-radius: 5px; border-left: 3px solid var(--accent);">
+                                        <h4 style="color: var(--accent); margin-bottom: 10px;">👷 Jobs System</h4>
+                                        <p>Pilih pekerjaan dan selesaikan tugas untuk mendapatkan uang:</p>
+                                        <div style="margin-top: 10px;">
+                                            <p><code>/jobs browse</code> - Lihat semua pekerjaan</p>
+                                            <p><code>/jobs join [job]</code> - Join pekerjaan</p>
+                                            <p><code>/jobs leave</code> - Keluar dari pekerjaan</p>
+                                            <p><code>/jobs info</code> - Info pekerjaan kamu</p>
+                                        </div>
+                                        <p style="margin-top: 10px; color: #aaa; font-size: 0.9rem;">
+                                            <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Miner dan Farmer adalah jobs paling profitable untuk pemula.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Sell System -->
+                                    <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 5px; border-left: 3px solid var(--primary);">
+                                        <h4 style="color: var(--primary); margin-bottom: 10px;">🛒 Sell Items</h4>
+                                        <p>Jual item yang kamu kumpulkan:</p>
+                                        <div style="margin-top: 10px;">
+                                            <p><code>/sell hand</code> - Jual item di tangan</p>
+                                            <p><code>/sell all</code> - Jual semua item di inventory</p>
+                                            <p><code>/sell [item] [jumlah]</code> - Jual item tertentu</p>
+                                            <p><code>/sell gui</code> - Buka GUI sell shop</p>
+                                        </div>
+                                        <p style="margin-top: 10px; color: #aaa; font-size: 0.9rem;">
+                                            <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Diamond, emerald, dan netherite scrap memiliki harga jual tertinggi.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Market Trading -->
+                                    <div style="background: rgba(255,0,255,0.1); padding: 15px; border-radius: 5px; border-left: 3px solid var(--clan-ppq);">
+                                        <h4 style="color: var(--clan-ppq); margin-bottom: 10px;">🏪 Player Market</h4>
+                                        <p>Jual-beli dengan pemain lain:</p>
+                                        <div style="margin-top: 10px;">
+                                            <p><code>/warp market</code> - Teleport ke market</p>
+                                            <p><code>/shop create [harga]</code> - Buat shop</p>
+                                            <p><code>/bal</code> - Cek balance uang</p>
+                                            <p><code>/pay [player] [amount]</code> - Kirim uang ke player</p>
+                                        </div>
+                                        <p style="margin-top: 10px; color: #aaa; font-size: 0.9rem;">
+                                            <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Jual item rare dan enchanted books di market untuk profit tinggi.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.3); border-radius: 5px;">
+                                    <h5 style="color: var(--light); margin-bottom: 10px;">💰 Top Money Making Methods</h5>
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                        <div>
+                                            <p style="color: var(--accent); margin: 0;">Miner Job + Auto Sell</p>
+                                            <p style="color: #aaa; font-size: 0.8rem;">± 50k coins/jam</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin: 0;">Farm Market Trading</p>
+                                            <p style="color: #aaa; font-size: 0.8rem;">± 100k coins/jam</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin: 0;">Event Participation</p>
+                                            <p style="color: #aaa; font-size: 0.8rem;">± 200k coins/event</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin: 0;">Clan Wars Rewards</p>
+                                            <p style="color: #aaa; font-size: 0.8rem;">± 500k coins/win</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-gift" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara menggunakan sistem Gacha/Crates?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <div style="display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                                        <div style="background: linear-gradient(135deg, #8B4513, #D2691E); padding: 10px 20px; border-radius: 5px;">
+                                            <h4 style="color: white; margin: 0;">🥉 Common</h4>
+                                            <p style="color: #aaa; margin: 5px 0 0 0; font-size: 0.9rem;">5,000 coins</p>
+                                        </div>
+                                        <div style="background: linear-gradient(135deg, #C0C0C0, #A9A9A9); padding: 10px 20px; border-radius: 5px;">
+                                            <h4 style="color: white; margin: 0;">🥈 Rare</h4>
+                                            <p style="color: #aaa; margin: 5px 0 0 0; font-size: 0.9rem;">25,000 coins</p>
+                                        </div>
+                                        <div style="background: linear-gradient(135deg, #FFD700, #DAA520); padding: 10px 20px; border-radius: 5px;">
+                                            <h4 style="color: white; margin: 0;">🥇 Legendary</h4>
+                                            <p style="color: #aaa; margin: 5px 0 0 0; font-size: 0.9rem;">100,000 coins</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">🎯 Cara Membeli Key</h5>
+                                        <ol style="padding-left: 20px;">
+                                            <li>Pergi ke <code>/warp market</code> atau <code>/warp crates</code></li>
+                                            <li>Cari NPC crate shop atau player shop</li>
+                                            <li>Beli crate key sesuai budget</li>
+                                            <li>Key akan otomatis masuk ke inventory</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">🎁 Cara Buka Crate</h5>
+                                        <ol style="padding-left: 20px;">
+                                            <li>Pergi ke <code>/warp gacha</code></li>
+                                            <li>Pilih crate yang ingin dibuka</li>
+                                            <li>Klik crate dengan key di tangan</li>
+                                            <li>Tunggu animasi gacha selesai</li>
+                                            <li>Item reward akan langsung masuk inventory</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px;">
+                                        <h5 style="color: var(--accent); margin-bottom: 10px;">🏆 Possible Rewards</h5>
+                                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                            <div>
+                                                <p style="color: var(--primary); margin: 0;"><strong>Common</strong></p>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Iron tools, food, basic materials</p>
+                                            </div>
+                                            <div>
+                                                <p style="color: #C0C0C0; margin: 0;"><strong>Rare</strong></p>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Diamond gear, enchanted books</p>
+                                            </div>
+                                            <div>
+                                                <p style="color: #FFD700; margin: 0;"><strong>Legendary</strong></p>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Netherite, elytra, rare cosmetics</p>
+                                            </div>
+                                            <div>
+                                                <p style="color: var(--clan-ppq); margin: 0;"><strong>Exclusive</strong></p>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Clan cosmetics, special ranks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 15px; padding: 10px; background: rgba(255,215,0,0.1); border-radius: 5px;">
+                                    <p style="color: var(--accent); margin: 0; font-size: 0.9rem;">
+                                        <i class="fas fa-chart-line"></i> <strong>Drop Rate:</strong> Common crate = 80% common, 15% rare, 5% legendary. Legendary crate = 20% common, 30% rare, 50% legendary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Clan System -->
+            <div class="faq-category fade-in-on-scroll" id="category-clan" style="margin-bottom: 60px;">
+                <div class="section-title">
+                    <h2><i class="fas fa-users"></i> Clan System</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item" style="background: rgba(30,30,30,0.8); border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid rgba(76,175,80,0.3);">
+                        <div class="faq-question" style="padding: 15px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: rgba(76,175,80,0.1);">
+                            <span style="font-weight: 600; color: var(--light);">
+                                <i class="fas fa-user-plus" style="color: var(--primary); margin-right: 10px;"></i>
+                                Bagaimana cara join atau buat clan?
+                            </span>
+                            <i class="fas fa-chevron-down" style="color: var(--accent); transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="padding: 0 20px; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                            <div style="padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <!-- Join Clan Section -->
+                                <div style="background: rgba(0,195,255,0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 3px solid var(--clan-mvp);">
+                                    <h4 style="color: var(--clan-mvp); margin-bottom: 15px;">🤝 Join Clan Yang Ada</h4>
+                                    
+                                    <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin: 15px 0;">
+                                        <div style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <div style="background: var(--clan-ppq); color: white; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                                            <div>
+                                                <p style="color: var(--light); margin: 0;">Cari clan yang sesuai dengan playstyle kamu</p>
+                                                <p style="color: #aaa; font-size: 0.9rem;">Pilih dari 4 clan utama atau clan independen</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <div style="background: var(--clan-ppq); color: white; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                                            <div>
+                                                <p style="color: var(--light); margin: 0;">Hubungi ketua clan via Discord atau in-game</p>
+                                                <p style="color: #aaa; font-size: 0.9rem;">Tanyakan syarat join dan interview process</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="display: flex; align-items: flex-start; gap: 10px;">
+                                            <div style="background: var(--clan-ppq); color: white; width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                                            <div>
+                                                <p style="color: var(--light); margin: 0;">Terima invite dan mulai berpartisipasi</p>
+                                                <p style="color: #aaa; font-size: 0.9rem;">Ikuti aturan clan dan kontribusikan untuk kemajuan clan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Create Clan Section -->
+                                <div style="background: rgba(255,215,0,0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 3px solid var(--accent);">
+                                    <h4 style="color: var(--accent); margin-bottom: 15px;">🏗️ Buat Clan Baru</h4>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; margin: 15px 0;">
+                                        <h5 style="color: var(--light); margin-bottom: 10px;">📋 Persyaratan Membuat Clan</h5>
+                                        <ul style="padding-left: 20px;">
+                                            <li>Minimal 3 anggota untuk start clan</li>
+                                            <li>Nama clan tidak mengandung kata kasar</li>
+                                            <li>Clan base harus di claim area</li>
+                                            <li>Setuju dengan clan rules server</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; margin: 15px 0;">
+                                        <h5 style="color: var(--light); margin-bottom: 10px;">🎮 Commands Clan</h5>
+                                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                            <div>
+                                                <code style="color: var(--accent);">/clan create [nama]</code>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Buat clan baru</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">/clan invite [player]</code>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Invite anggota</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">/clan promote [player]</code>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Promote anggota</p>
+                                            </div>
+                                            <div>
+                                                <code style="color: var(--accent);">/clan kick [player]</code>
+                                                <p style="color: #aaa; font-size: 0.8rem;">Kick anggota</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Clan Benefits -->
+                                <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 5px; border-left: 3px solid var(--primary);">
+                                    <h4 style="color: var(--primary); margin-bottom: 15px;">✨ Manfaat Join Clan</h4>
+                                    
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                        <div>
+                                            <p style="color: var(--accent); margin-bottom: 5px;">🤝 Team Protection</p>
+                                            <p style="color: #aaa; font-size: 0.9rem;">Clan members tidak bisa saling damage</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin-bottom: 5px;">💰 Shared Economy</p>
+                                            <p style="color: #aaa; font-size: 0.9rem;">Clan bank untuk penyimpanan uang bersama</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin-bottom: 5px;">🏆 Clan Wars</p>
+                                            <p style="color: #aaa; font-size: 0.9rem;">Ikuti PvP clan wars untuk hadiah besar</p>
+                                        </div>
+                                        <div>
+                                            <p style="color: var(--accent); margin-bottom: 5px;">🏰 Clan Base</p>
+                                            <p style="color: #aaa; font-size: 0.9rem;">Area claim khusus untuk clan members</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Commands Section -->
+            <div class="commands-section fade-in-on-scroll" style="margin-top: 50px;">
+                <div class="section-title">
+                    <h2>⚡ Commands Penting</h2>
+                </div>
+                
+                <div style="background: rgba(30,30,30,0.8); padding: 25px; border-radius: 15px; border: 2px solid var(--accent); box-shadow: 0 0 20px rgba(255,215,0,0.1);">
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+                        <!-- Row 1 -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(76,175,80,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/spawn</code>
+                                <p style="color: var(--light); margin-top: 5px;">Teleport ke spawn utama</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Cooldown: 30 detik</p>
+                            </div>
+                            <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(76,175,80,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/rtp</code>
+                                <p style="color: var(--light); margin-top: 5px;">Random teleport ke wild</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Cooldown: 5 menit</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 2 -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(255,215,0,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,215,0,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/sethome [nama]</code>
+                                <p style="color: var(--light); margin-top: 5px;">Set home location</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Max: 3 homes (free)</p>
+                            </div>
+                            <div style="background: rgba(255,215,0,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,215,0,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/home [nama]</code>
+                                <p style="color: var(--light); margin-top: 5px;">Teleport ke home</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Cooldown: 10 detik</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 3 -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(0,195,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,195,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/warp [nama]</code>
+                                <p style="color: var(--light); margin-top: 5px;">Teleport ke warp point</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Available: market, crates, gacha</p>
+                            </div>
+                            <div style="background: rgba(0,195,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,195,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/tpa [player]</code>
+                                <p style="color: var(--light); margin-top: 5px;">Request teleport ke player</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Player harus accept</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 4 -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(255,0,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,0,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/bal</code>
+                                <p style="color: var(--light); margin-top: 5px;">Cek balance coins</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Check your money</p>
+                            </div>
+                            <div style="background: rgba(255,0,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,0,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/baltop</code>
+                                <p style="color: var(--light); margin-top: 5px;">Top 10 richest players</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Server leaderboard</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 5 -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/afk</code>
+                                <p style="color: var(--light); margin-top: 5px;">Toggle AFK status</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Auto after 5 minutes</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.3);">
+                                <code style="color: var(--accent); font-size: 1.1rem;">/help</code>
+                                <p style="color: var(--light); margin-top: 5px;">Show help menu</p>
+                                <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">All server commands</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support CTA -->
+            <div class="text-center fade-in-on-scroll" style="margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(76,175,80,0.1), rgba(255,215,0,0.1)); border-radius: 15px; border: 2px solid var(--primary);">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <h3 style="color: var(--accent); margin-bottom: 15px;">🎮 Masih Bingung?</h3>
+                    <p style="margin-bottom: 25px; color: var(--light);">Bergabunglah dengan Discord kami untuk bantuan langsung dari staff dan komunitas!</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                        <a href="https://discord.gg/Mgw6U537js" target="_blank" class="btn btn-discord" style="padding: 15px 30px; font-size: 1.1rem;">
+                            <i class="fab fa-discord"></i> Join Discord Support
+                        </a>
+                        
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <a href="contact.html" class="btn" style="padding: 10px 20px;">
+                                <i class="fas fa-envelope"></i> Contact Form
+                            </a>
+                            <a href="rules.html" class="btn" style="padding: 10px 20px;">
+                                <i class="fas fa-book"></i> Read Rules
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 5px; display: inline-block;">
+                        <small style="color: #aaa;">
+                            <i class="fas fa-clock"></i> Response time: 1-12 hours (Discord), 24-48 hours (Email)
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="clan.html">Clan</a>
+                <a href="rules.html">Rules</a>
+                <a href="staff.html">Staff</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <p class="copyright">
+                &copy; <span id="current-year">2023</span> EcoLife SMP. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Enhanced FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for category navigation
+            document.querySelectorAll('.faq-categories a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // FAQ toggle functionality
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i.fa-chevron-down');
+                    const isActive = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+                    
+                    // Close all other FAQs
+                    document.querySelectorAll('.faq-answer').forEach(item => {
+                        if (item !== answer) {
+                            item.style.maxHeight = '0';
+                            const otherIcon = item.previousElementSibling.querySelector('i.fa-chevron-down');
+                            if (otherIcon) {
+                                otherIcon.style.transform = 'rotate(0deg)';
+                            }
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    if (!isActive) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        if (icon) {
+                            icon.style.transform = 'rotate(180deg)';
+                        }
+                        
+                        // Smooth scroll to make sure FAQ is visible
+                        setTimeout(() => {
+                            answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    } else {
+                        answer.style.maxHeight = '0';
+                        if (icon) {
+                            icon.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+            });
+            
+            // Auto-expand FAQ if hash in URL
+            setTimeout(() => {
+                const hash = window.location.hash;
+                if (hash && document.querySelector(hash)) {
+                    const category = document.querySelector(hash);
+                    category.scrollIntoView();
+                    
+                    // Auto-expand first FAQ in category
+                    const firstFAQ = category.querySelector('.faq-question');
+                    if (firstFAQ) {
+                        firstFAQ.click();
+                    }
+                }
+            }, 500);
+            
+            // Update year in footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

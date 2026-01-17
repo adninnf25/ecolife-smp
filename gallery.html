@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - EcoLife SMP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">EcoLife SMP</div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Clan</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="clan.html">Semua Clan</a></li>
+                        <li><a href="clan-ppq.html" class="ppq">🤡 PPQ</a></li>
+                        <li><a href="clan-lightness.html" class="lightness">🌟 LightNess</a></li>
+                        <li><a href="clan-mvp.html" class="mvp">👑 MVP</a></li>
+                        <li><a href="clan-darkness.html" class="darkness">👿 Darkness</a></li>
+                    </ul>
+                </li>
+                <li><a href="lore.html">Lore</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-on-scroll">
+                <h1>Gallery EcoLife SMP</h1>
+                <p class="tagline">Kumpulan Screenshot Terbaik dari Server</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section>
+        <div class="container">
+            <!-- Gallery Info -->
+            <div class="gallery-info fade-in-on-scroll" style="text-align: center; margin-bottom: 40px;">
+                <p>Lihat momen-momen terbaik, build epik, dan event seru dari EcoLife SMP. Semua gambar diambil langsung dari server oleh para pemain.</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-container" id="gallery-grid">
+                <!-- Gambar akan di-load otomatis oleh JavaScript -->
+                <!-- Fallback akan ditampilkan jika gambar tidak ditemukan -->
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="gallery-loading" class="text-center" style="margin: 40px 0;">
+                <div class="loading-spinner" style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <p>Memuat gambar gallery...</p>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="gallery-lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; justify-content: center; align-items: center; padding: 20px;">
+                <div style="position: relative; max-width: 90%; max-height: 90%;">
+                    <img id="lightbox-image" src="" alt="" style="max-width: 100%; max-height: 80vh; border-radius: 10px;">
+                    <div id="lightbox-caption" style="color: white; text-align: center; margin-top: 15px; font-size: 1.1rem;"></div>
+                    <button id="lightbox-close" style="position: absolute; top: -40px; right: 0; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="lightbox-prev" style="position: absolute; left: -50px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="lightbox-next" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Categories -->
+            <div class="gallery-categories fade-in-on-scroll" style="margin-top: 50px;">
+                <div class="section-title">
+                    <h2>Kategori Gallery</h2>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏰</div>
+                        <h3>Player Builds</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-home"></i> Base & rumah player</li>
+                            <li><i class="fas fa-city"></i> Mega builds & cities</li>
+                            <li><i class="fas fa-archway"></i> Redstone contraptions</li>
+                            <li><i class="fas fa-tree"></i> Terraforming & landscape</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚔️</div>
+                        <h3>PvP & Events</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-trophy"></i> Tournament moments</li>
+                            <li><i class="fas fa-users"></i> Event screenshots</li>
+                            <li><i class="fas fa-crosshairs"></i> PvP arena action</li>
+                            <li><i class="fas fa-crown"></i> Winner celebrations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Server World</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-map"></i> Spawn & hub area</li>
+                            <li><i class="fas fa-store"></i> Market & shops</li>
+                            <li><i class="fas fa-dungeon"></i> Dungeons & adventures</li>
+                            <li><i class="fas fa-mountain"></i> World landscapes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Your Screenshot -->
+            <div class="feature-card fade-in-on-scroll" style="margin-top: 50px; padding: 30px;">
+                <h3 style="color: var(--accent); text-align: center; margin-bottom: 20px;">Kirim Screenshot Kamu!</h3>
+                <p style="text-align: center; margin-bottom: 20px;">Punya screenshot keren dari EcoLife SMP? Kirim ke kami untuk ditampilkan di gallery!</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 600px; margin: 0 auto;">
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fab fa-discord"></i> Via Discord</h4>
+                        <p>Upload di channel <strong>#screenshots</strong> di Discord server</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <h4 style="color: #ea4335; margin-bottom: 10px;"><i class="fas fa-envelope"></i> Via Email</h4>
+                        <p>Kirim ke: <strong>EcoLifeSmpEvo@gmail.com</strong></p>
+                        <p style="color: #aaa; font-size: 0.9rem;">Subject: "Gallery Submission - [Nama Player]"</p>
+                    </div>
+                    
+                    <div style="background: rgba(76,175,80,0.1); padding: 15px; border-radius: 10px; margin-top: 10px;">
+                        <h5 style="color: var(--accent); margin-bottom: 10px;">Syarat Submission:</h5>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Gambar harus dari EcoLife SMP</li>
+                            <li>Resolusi minimal 1280x720</li>
+                            <li>Konten pantas (sesuai rules)</li>
+                            <li>Mention IGN kamu</li>
+                            <li>Max 5 gambar per submission</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More -->
+            <div class="text-center fade-in-on-scroll" style="margin-top: 50px;">
+                <h3 style="color: var(--primary); margin-bottom: 20px;">Ingin Lihat Lebih Banyak?</h3>
+                <p style="margin-bottom: 20px;">Join server untuk melihat langsung dunia EcoLife SMP yang epik!</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                    <a href="index.html#server-ips" class="btn">
+                        <i class="fas fa-gamepad"></i> Join Server
+                    </a>
+                    <a href="https://discord.gg/Mgw6U537js" target="_blank" class="btn btn-discord">
+                        <i class="fab fa-discord"></i> Lihat Gallery di Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="clan.html">Clan</a>
+                <a href="rules.html">Rules</a>
+                <a href="staff.html">Staff</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <p class="copyright">
+                &copy; <span id="current-year">2023</span> EcoLife SMP. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+    <!-- Gallery Specific Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryGrid = document.getElementById('gallery-grid');
+        const loadingIndicator = document.getElementById('gallery-loading');
+        const lightbox = document.getElementById('gallery-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+        
+        let currentImageIndex = 0;
+        let galleryImages = [];
+        
+        if (galleryGrid) {
+            // Array caption untuk 12 gambar
+            const captions = [
+                "Spawn Area EcoLife SMP",
+                "Market Player yang Ramai",
+                "PvP Tournament Arena",
+                "Mega Build oleh Clan LightNess",
+                "Redstone Machine Complex",
+                "Clan Base PPQ yang Misterius",
+                "Night View dari Spawn",
+                "Event Building Competition",
+                "Adventure Map Custom",
+                "Clan War Preparation",
+                "Elytra Race Event",
+                "Clan MVP Headquarters"
+            ];
+            
+            // Array placeholder gambar jika file tidak ditemukan
+            const placeholderImages = [
+                'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1601042879364-f3947d1f9fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1542359649-31e03cd4d909?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                'https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            ];
+            
+            // Load 12 gambar (format JPG)
+            for (let i = 1; i <= 12; i++) {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item fade-in-on-scroll';
+                galleryItem.style.animationDelay = `${i * 0.05}s`;
+                galleryItem.dataset.index = i - 1;
+                
+                const img = document.createElement('img');
+                img.loading = 'lazy';
+                img.alt = `Gallery Image ${i}`;
+                
+                // Coba load gambar dari folder images/gallery dengan format JPG
+                const imagePath = `images/gallery/${i}.jpg`;  // <-- UBAH DI SINI: .png menjadi .jpg
+                
+                // Store image info for lightbox
+                galleryImages.push({
+                    src: imagePath,
+                    caption: captions[i-1] || `Gallery Image ${i}`,
+                    placeholder: placeholderImages[i-1] || placeholderImages[0]
+                });
+                
+                // Test if image exists
+                const testImage = new Image();
+                testImage.onload = function() {
+                    // Image exists
+                    img.src = imagePath;
+                    img.alt = captions[i-1] || `Gallery Image ${i}`;
+                };
+                
+                testImage.onerror = function() {
+                    // Image doesn't exist, use placeholder
+                    img.src = placeholderImages[i-1] || placeholderImages[0];
+                    img.alt = captions[i-1] || `Gallery Image ${i} (Placeholder)`;
+                };
+                
+                testImage.src = imagePath;
+                
+                // Click to open lightbox
+                galleryItem.addEventListener('click', function() {
+                    const index = parseInt(this.dataset.index);
+                    openLightbox(index);
+                });
+                
+                galleryItem.appendChild(img);
+                galleryGrid.appendChild(galleryItem);
+            }
+            
+            // Hide loading indicator after images are loaded
+            setTimeout(() => {
+                if (loadingIndicator) {
+                    loadingIndicator.style.display = 'none';
+                }
+                
+                // Trigger fade-in animations
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                galleryItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('fade-in');
+                    }, index * 50);
+                });
+            }, 1000);
+            
+            // Lightbox functions
+            function openLightbox(index) {
+                currentImageIndex = index;
+                updateLightbox();
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            function updateLightbox() {
+                const imgData = galleryImages[currentImageIndex];
+                
+                // Test if actual image exists
+                const testImage = new Image();
+                testImage.onload = function() {
+                    lightboxImage.src = imgData.src;
+                };
+                testImage.onerror = function() {
+                    lightboxImage.src = imgData.placeholder;
+                };
+                
+                testImage.src = imgData.src;
+                lightboxCaption.textContent = imgData.caption;
+                
+                // Update button visibility
+                lightboxPrev.style.display = currentImageIndex === 0 ? 'none' : 'block';
+                lightboxNext.style.display = currentImageIndex === galleryImages.length - 1 ? 'none' : 'block';
+            }
+            
+            function nextImage() {
+                if (currentImageIndex < galleryImages.length - 1) {
+                    currentImageIndex++;
+                    updateLightbox();
+                }
+            }
+            
+            function prevImage() {
+                if (currentImageIndex > 0) {
+                    currentImageIndex--;
+                    updateLightbox();
+                }
+            }
+            
+            // Event listeners for lightbox
+            if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+            if (lightboxPrev) lightboxPrev.addEventListener('click', prevImage);
+            if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') closeLightbox();
+                    if (e.key === 'ArrowLeft') prevImage();
+                    if (e.key === 'ArrowRight') nextImage();
+                }
+            });
+            
+            // Click outside to close
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            // Update year in footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        }
+    });
+    </script>
+    
+    <!-- Lightbox CSS -->
+    <style>
+        /* Lightbox styling */
+        #gallery-lightbox img {
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        /* Gallery item hover effect */
+        .gallery-item {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .gallery-item img {
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            opacity: 0.9;
+        }
+        
+        /* Responsive lightbox buttons */
+        @media (max-width: 768px) {
+            #lightbox-prev {
+                left: 10px;
+            }
+            
+            #lightbox-next {
+                right: 10px;
+            }
+            
+            #lightbox-close {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</body>
+</html>
